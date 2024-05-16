@@ -1,10 +1,10 @@
 public class WeatherForecast {
     public static void main(String[] args) {
-        // WeatherForecast.test();//实验二
-        // WeatherForecast.lambdaTest();//实验三
+        WeatherForecast.test();//实验二
+        WeatherForecast.lambdaTest();//实验三
     }
     public static void test(){//实验二
-        Weather weather=new Weather(new Sunny());
+        Weather weather=new Weather(new Cloudy());
         weather.show();
     }
     public static void lambdaTest(){//实验三
