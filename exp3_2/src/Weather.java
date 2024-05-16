@@ -7,6 +7,7 @@ public class Weather {
     public void setState(WeatherState state){
         this.state=state;
     }
+    
     public void show(){
         state.showState();
     }

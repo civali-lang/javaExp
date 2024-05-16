@@ -3,8 +3,11 @@ import java.util.Scanner;
 
 import p1.*;
 
-public class App {
-    public void run(){
+public class Test {
+    public static void main(String[] args) {
+        run();
+    }
+    public static void run(){
         Company company=new Company();
         Scanner sc=new Scanner(System.in);
         System.out.println("员工数量：");

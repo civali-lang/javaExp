@@ -1,21 +1,15 @@
 package p1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class School {
-    Student[] s;
-    int NumOfStu;
-    public School(int capacity){
-        s=new Student[capacity];
-        NumOfStu=0;
-    }
+    private List<Student> students=new ArrayList<Student>();
     public void addStudent(Student student){
-        if(NumOfStu>=s.length){
-            System.out.println("undercapacity!!!");
-            return;
-        }
-        s[NumOfStu++]=student;
+        students.add(student);
     }
     public void displayStudents(){
-        for(Student student : s){
+        for(Student student : students){
             if(student != null){
                 System.out.println("ID: "+student.studentID+", Name: "+student.name+", Age: "+student.age);
                 student.eat();

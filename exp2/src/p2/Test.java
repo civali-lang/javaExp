@@ -4,7 +4,7 @@ import java.util.Scanner;
 import p1.*;
 public class Test {
     public void run(){
-        School school = new School(4);
+        School school = new School();
         Scanner sc=new Scanner(System.in);
         System.out.println("你要输入几个学生信息：");
         int n = sc.nextInt();
